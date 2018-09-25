@@ -18,6 +18,17 @@ namespace if_task_3
             else if (number > 0)
                 Console.WriteLine($"numero {number} on positiivinen!");
             Console.WriteLine($"syötit numeron {userInput}");
+            bool isNumber = int.TryParse(userInput, out number);
+
+            if (isNumber)
+            {
+                if (number % 2 == 0)
+                    Console.WriteLine($"luku {number} on parillinen!");
+                else
+                    Console.WriteLine($"luku {number} on pariton!");
+            }
+            else
+                Console.WriteLine("väärä syöte!");
 
         }
     }
