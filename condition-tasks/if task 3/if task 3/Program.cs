@@ -17,7 +17,6 @@ namespace if_task_3
                 Console.WriteLine($"numero {number} on negatiivinen!");
             else if (number > 0)
                 Console.WriteLine($"numero {number} on positiivinen!");
-            Console.WriteLine($"syötit numeron {userInput}");
             bool isNumber = int.TryParse(userInput, out number);
 
             if (isNumber)
