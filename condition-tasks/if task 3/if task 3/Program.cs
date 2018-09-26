@@ -14,11 +14,11 @@ namespace if_task_3
             if (isNumber)
             {
                 if (number == 0)
-                    Console.WriteLine($"numero {number} on nolla!");
+                    Console.WriteLine($"luku {number} on nolla!");
                 else if (number < 0)
-                    Console.WriteLine($"numero {number} on negatiivinen!");
+                    Console.WriteLine($"luku {number} on negatiivinen!");
                 else if (number > 0)
-                    Console.WriteLine($"numero {number} on positiivinen!");
+                    Console.WriteLine($"luku {number} on positiivinen!");
 
                 if (number % 2 == 0)
                     Console.WriteLine($"luku {number} on parillinen!");
