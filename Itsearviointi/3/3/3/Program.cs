@@ -15,8 +15,6 @@ namespace _3
                 string userInput = Console.ReadLine();
                 number = int.Parse(userInput);
             } while (number != -1);
-
-            Console.WriteLine($"{}");
         }
     }
 }
