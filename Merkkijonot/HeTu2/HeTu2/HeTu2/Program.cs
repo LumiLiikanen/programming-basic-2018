@@ -10,7 +10,7 @@ namespace HeTu2
             Console.WriteLine("Syötä syntymäpäivä pp/kk/vvvv");
             string input = Console.ReadLine();
             string date = input.Replace("/", "");
-            string input1= input.Remove(4, 2);
+            string input1= date.Remove(4, 2);
             if (IsDate(date))
             {
                 string ending = EndingGenerator();
@@ -26,13 +26,13 @@ namespace HeTu2
             try
             {
                 DateTime date1 = new DateTime(year, month, day);
-                return true;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return false;
             }
+            return true;
         }
         public static string EndingGenerator ()
         {
